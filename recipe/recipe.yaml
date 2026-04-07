@@ -13,7 +13,7 @@ source:
   sha256: b79b3f99e29110af74b4aae19ba299304b3424f5c339a1b90918ba6b02683724
 
 build:
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
   python:
@@ -43,11 +43,11 @@ requirements:
     - nco >=5.3.6
     - netcdf4 >=1.7.4
     - pandas >=2.2.3
-    - cartopy >=0.25.0
+    - cartopy >=0.17.0
     - pybtex >=0.25.1
     - f90nml >=1.5
     - loguru >=0.7.3
-    - livvkit >=3.3.0
+    - livvkit >=3.3.1
 
 tests:
   - python:
