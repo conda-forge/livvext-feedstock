@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "1.1.0"
+  version: "1.1.2"
 
 package:
   name: livvext
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/livvext/livvext-${{ version }}.tar.gz
-  sha256: b79b3f99e29110af74b4aae19ba299304b3424f5c339a1b90918ba6b02683724
+  sha256: b1e98bf4ba71e69366b1509b3d9b807908743fa236dce6a39800fb77c5eccbb5
 
 build:
-  number: 1
+  number: 0
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   noarch: python
   python:
